@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/722d0ad37e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container d-flex">
+        <div class="imgnav">
+          <img src="images/logo@2x.png" alt="logo" />
+        </div>
+        <div class="logonav d-flex flex-column">
+          <h1 class="navbar-brand">Weather</h1>
+          <p>Tagline goes here</p>
+        </div>
+        <button
+          class="navbar-toggler bg-info ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Photos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="hero">
+      <div class="container">
+        <form class="find-form position-relative">
+          <input
+            id="findInput"
+            class="form-control w-100 find"
+            type="text"
+            placeholder="Find your location..."
+          />
+          <button
+            id="btnFind"
+            class="btn-find btn btn-outline-info position-absolute"
+            type="button"
+          >
+            Find
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Weather Forecast -->
+    <div class="forecast-table">
+      <div class="container">
+        <div id="forecast" class="row rounded-3 g-5 forecast-container"></div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

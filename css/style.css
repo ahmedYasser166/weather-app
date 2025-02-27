@@ -1,0 +1,147 @@
+body {
+  background-color: #1e202b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+::placeholder {
+  color: white !important;
+}
+
+:root {
+  --color-dark: #1e202b;
+  --color-dark-alt: #262936;
+  --color-light: #fff;
+  --color-primary: #009ad8;
+}
+
+.navbar {
+  background-color: var(--color-dark);
+  padding: 15px 0;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.navbar a:hover {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.hero {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.find-form input.form-control {
+  padding: 15px 20px;
+  background-color: var(--color-dark-alt);
+  color: var(--color-light);
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.find-form input.form-control:focus {
+  background-color: #323544;
+  box-shadow: 0 0 10px rgba(0, 154, 216, 0.5);
+}
+
+.btn-find {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+  border: none;
+  border-radius: 30px;
+  background: var(--color-primary);
+  color: var(--color-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-find:hover {
+  background: #0078a0;
+}
+
+.forecast-table {
+  margin-top: -120px;
+  margin-bottom: 50px;
+}
+
+.forecast {
+  background-color: var(--color-dark-alt);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.forecast:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 154, 216, 0.3);
+}
+
+.card {
+  background-color: #262936;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-header {
+  background-color: #1e202b;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body {
+  background-color: #262936;
+  padding: 20px;
+}
+
+.card-body img {
+  width: 60px;
+  height: 60px;
+}
+
+.humidity,
+.wind {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff4d4d;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.error-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.error-text {
+  font-size: 1.2rem;
+}
